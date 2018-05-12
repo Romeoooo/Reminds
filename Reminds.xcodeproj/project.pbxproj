@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01117A7E71BBB3AC7679D341 /* libPods-Reminds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C073F0808DD9B201A7B7C2B2 /* libPods-Reminds.a */; };
 		6E04CE6820A7419800838D03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E04CE6720A7419800838D03 /* AppDelegate.m */; };
 		6E04CE7020A7419900838D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE6F20A7419900838D03 /* Assets.xcassets */; };
 		6E04CE7320A7419900838D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE7120A7419900838D03 /* LaunchScreen.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AA4E7CB135A6F059494C2A7 /* Pods-Reminds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reminds.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reminds/Pods-Reminds.release.xcconfig"; sourceTree = "<group>"; };
 		6E04CE6320A7419800838D03 /* Reminds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E04CE6620A7419800838D03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E04CE6720A7419800838D03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		6E04CE9120A742D600838D03 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		6E04CE9220A742D600838D03 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		6E04CE9320A742D600838D03 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7A0D20005BD68B43DB1F3E33 /* Pods-Reminds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reminds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reminds/Pods-Reminds.debug.xcconfig"; sourceTree = "<group>"; };
+		C073F0808DD9B201A7B7C2B2 /* libPods-Reminds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01117A7E71BBB3AC7679D341 /* libPods-Reminds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22CC0BE349D36C530FA6B15C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A0D20005BD68B43DB1F3E33 /* Pods-Reminds.debug.xcconfig */,
+				5AA4E7CB135A6F059494C2A7 /* Pods-Reminds.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64A315F9D2681AEAFD5FED49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C073F0808DD9B201A7B7C2B2 /* libPods-Reminds.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E04CE5A20A7419800838D03 = {
 			isa = PBXGroup;
 			children = (
 				6E04CE6520A7419800838D03 /* Reminds */,
 				6E04CE6420A7419800838D03 /* Products */,
+				22CC0BE349D36C530FA6B15C /* Pods */,
+				64A315F9D2681AEAFD5FED49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E04CE7920A7419900838D03 /* Build configuration list for PBXNativeTarget "Reminds" */;
 			buildPhases = (
+				149079CF0A705E164E62BEBD /* [CP] Check Pods Manifest.lock */,
 				6E04CE5F20A7419800838D03 /* Sources */,
 				6E04CE6020A7419800838D03 /* Frameworks */,
 				6E04CE6120A7419800838D03 /* Resources */,
+				3953532FBDA6A9AEFB7ABEA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +221,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		149079CF0A705E164E62BEBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reminds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3953532FBDA6A9AEFB7ABEA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Reminds/Pods-Reminds-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reminds/Pods-Reminds-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E04CE5F20A7419800838D03 /* Sources */ = {
@@ -333,16 +400,14 @@
 		};
 		6E04CE7A20A7419900838D03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0D20005BD68B43DB1F3E33 /* Pods-Reminds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Reminds/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reminds.Reminds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -352,16 +417,14 @@
 		};
 		6E04CE7B20A7419900838D03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA4E7CB135A6F059494C2A7 /* Pods-Reminds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Reminds/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reminds.Reminds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
