@@ -19,8 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
+    [self appConfig];
+    
     LoginViewController *loginVC = [[LoginViewController alloc] init];
-    self.window.rootViewController = loginVC;
+    UINavigationController *loginNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    loginNav.navigationBarHidden = YES;
+    self.window.rootViewController = loginNav;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -28,7 +32,8 @@
 }
 
 - (void)appConfig{
-//    [UITextField appearance] setTintColor:[UIColor ]
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    [[UITextField appearance] setTintColor:[UIColor colorWithHexString:@"#AAAAAA"]];
 }
 
 
