@@ -10,6 +10,13 @@
 
 @interface LoginViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *tfView;
+@property (weak, nonatomic) IBOutlet UITextField *phoneTF;
+@property (weak, nonatomic) IBOutlet UITextField *passowrdTF;
+@property (weak, nonatomic) IBOutlet UIButton *forgetButton;
+@property (weak, nonatomic) IBOutlet UIButton *noAccountButton;
+@property (weak, nonatomic) IBOutlet UIButton *wechatButton;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
 
@@ -17,7 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.tfView.layer.cornerRadius = 4;
+    self.wechatButton.layer.cornerRadius = self.wechatButton.frame.size.height / 2;
+    self.registerButton.layer.cornerRadius = self.registerButton.frame.size.height / 2;
+    
 }
 
 - (void)didReceiveMemoryWarning {

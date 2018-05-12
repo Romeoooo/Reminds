@@ -12,7 +12,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
+                <outlet property="forgetButton" destination="dB2-gO-LiX" id="xkU-Gc-jfJ"/>
+                <outlet property="noAccountButton" destination="JVU-vZ-TtQ" id="An9-Iu-7UD"/>
+                <outlet property="passowrdTF" destination="ues-KN-pgo" id="3oc-UW-dDA"/>
+                <outlet property="phoneTF" destination="dfy-Qf-ete" id="esN-rk-X90"/>
+                <outlet property="registerButton" destination="sK5-YQ-1s8" id="Lei-f4-4mw"/>
+                <outlet property="tfView" destination="QI3-i6-f2v" id="HSr-Sg-AXM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wechatButton" destination="IBu-6e-lqV" id="Yhr-hx-iM4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -29,7 +36,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QI3-i6-f2v">
                     <rect key="frame" x="16" y="203" width="343" height="80"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QE-fx-shF">
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QE-fx-shF">
                             <rect key="frame" x="0.0" y="40" width="343" height="1"/>
                             <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="deviceRGB"/>
                             <constraints>
@@ -46,17 +53,16 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ues-KN-pgo">
-                            <rect key="frame" x="16" y="41" width="311" height="39"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="39" id="iZu-Vq-Ae5"/>
-                            </constraints>
+                            <rect key="frame" x="16" y="41" width="252" height="39"/>
                             <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="deviceRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB2-gO-LiX">
-                            <rect key="frame" x="272" y="46" width="65" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB2-gO-LiX">
+                            <rect key="frame" x="268" y="41" width="75" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="TJx-LR-VQH"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title="忘记密码?">
                                 <color key="titleColor" red="0.24313725490196078" green="0.28627450980392155" blue="0.32156862745098036" alpha="1" colorSpace="deviceRGB"/>
@@ -66,15 +72,19 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="5G1-5a-khp"/>
+                        <constraint firstItem="dB2-gO-LiX" firstAttribute="top" secondItem="8QE-fx-shF" secondAttribute="bottom" id="7Uv-bs-DDq"/>
                         <constraint firstAttribute="trailing" secondItem="8QE-fx-shF" secondAttribute="trailing" id="BCR-OU-Kfn"/>
-                        <constraint firstItem="ues-KN-pgo" firstAttribute="top" secondItem="8QE-fx-shF" secondAttribute="bottom" id="JRZ-2w-jSs"/>
-                        <constraint firstItem="ues-KN-pgo" firstAttribute="leading" secondItem="QI3-i6-f2v" secondAttribute="leading" constant="16" id="O5b-nw-DSx"/>
+                        <constraint firstItem="ues-KN-pgo" firstAttribute="top" secondItem="8QE-fx-shF" secondAttribute="bottom" id="KGo-7S-g5f"/>
                         <constraint firstAttribute="trailing" secondItem="dfy-Qf-ete" secondAttribute="trailing" constant="16" id="bAN-Oj-JOB"/>
-                        <constraint firstAttribute="trailing" secondItem="ues-KN-pgo" secondAttribute="trailing" constant="16" id="bLR-aK-6Do"/>
                         <constraint firstItem="dfy-Qf-ete" firstAttribute="leading" secondItem="QI3-i6-f2v" secondAttribute="leading" constant="16" id="cSG-5E-SOp"/>
+                        <constraint firstAttribute="trailing" secondItem="dB2-gO-LiX" secondAttribute="trailing" id="d8q-5y-P0h"/>
+                        <constraint firstAttribute="bottom" secondItem="dB2-gO-LiX" secondAttribute="bottom" id="dp3-NJ-0dM"/>
+                        <constraint firstItem="dB2-gO-LiX" firstAttribute="leading" secondItem="ues-KN-pgo" secondAttribute="trailing" id="k8V-f9-6cQ"/>
                         <constraint firstItem="8QE-fx-shF" firstAttribute="top" secondItem="QI3-i6-f2v" secondAttribute="top" constant="40" id="lfr-Nn-TMA"/>
                         <constraint firstItem="8QE-fx-shF" firstAttribute="leading" secondItem="QI3-i6-f2v" secondAttribute="leading" id="nuf-K1-mZU"/>
+                        <constraint firstAttribute="bottom" secondItem="ues-KN-pgo" secondAttribute="bottom" id="on0-9x-ZlE"/>
                         <constraint firstItem="dfy-Qf-ete" firstAttribute="top" secondItem="QI3-i6-f2v" secondAttribute="top" id="sf0-7T-F4s"/>
+                        <constraint firstItem="ues-KN-pgo" firstAttribute="leading" secondItem="QI3-i6-f2v" secondAttribute="leading" constant="16" id="z5B-pb-aO6"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7c-Xi-s7N">
