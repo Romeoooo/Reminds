@@ -13,6 +13,17 @@
 		6E04CE7020A7419900838D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE6F20A7419900838D03 /* Assets.xcassets */; };
 		6E04CE7320A7419900838D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE7120A7419900838D03 /* LaunchScreen.storyboard */; };
 		6E04CE7620A7419900838D03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E04CE7520A7419900838D03 /* main.m */; };
+		6E04CE8820A742BE00838D03 /* newuser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE7F20A742BE00838D03 /* newuser@2x.png */; };
+		6E04CE8920A742BE00838D03 /* newuser@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE8020A742BE00838D03 /* newuser@3x.png */; };
+		6E04CE8A20A742BE00838D03 /* wechat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE8120A742BE00838D03 /* wechat@3x.png */; };
+		6E04CE8B20A742BE00838D03 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE8220A742BE00838D03 /* logo.png */; };
+		6E04CE8C20A742BE00838D03 /* wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE8320A742BE00838D03 /* wechat@2x.png */; };
+		6E04CE8D20A742BE00838D03 /* newuser.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE8420A742BE00838D03 /* newuser.png */; };
+		6E04CE8E20A742BE00838D03 /* wechat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE8520A742BE00838D03 /* wechat.png */; };
+		6E04CE8F20A742BE00838D03 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE8620A742BE00838D03 /* logo@2x.png */; };
+		6E04CE9020A742BE00838D03 /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE8720A742BE00838D03 /* logo@3x.png */; };
+		6E04CE9420A742D600838D03 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E04CE9220A742D600838D03 /* LoginViewController.m */; };
+		6E04CE9520A742D600838D03 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CE9320A742D600838D03 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,18 @@
 		6E04CE7220A7419900838D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E04CE7420A7419900838D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E04CE7520A7419900838D03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E04CE7F20A742BE00838D03 /* newuser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newuser@2x.png"; sourceTree = "<group>"; };
+		6E04CE8020A742BE00838D03 /* newuser@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newuser@3x.png"; sourceTree = "<group>"; };
+		6E04CE8120A742BE00838D03 /* wechat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat@3x.png"; sourceTree = "<group>"; };
+		6E04CE8220A742BE00838D03 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		6E04CE8320A742BE00838D03 /* wechat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat@2x.png"; sourceTree = "<group>"; };
+		6E04CE8420A742BE00838D03 /* newuser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newuser.png; sourceTree = "<group>"; };
+		6E04CE8520A742BE00838D03 /* wechat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wechat.png; sourceTree = "<group>"; };
+		6E04CE8620A742BE00838D03 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		6E04CE8720A742BE00838D03 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
+		6E04CE9120A742D600838D03 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6E04CE9220A742D600838D03 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6E04CE9320A742D600838D03 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,16 @@
 		6E04CE6520A7419800838D03 /* Reminds */ = {
 			isa = PBXGroup;
 			children = (
+				6E04CE7E20A742A400838D03 /* Login */,
+				6E04CE7D20A7429900838D03 /* Resources */,
+				6E04CE7C20A7427F00838D03 /* Other */,
+			);
+			path = Reminds;
+			sourceTree = "<group>";
+		};
+		6E04CE7C20A7427F00838D03 /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				6E04CE6620A7419800838D03 /* AppDelegate.h */,
 				6E04CE6720A7419800838D03 /* AppDelegate.m */,
 				6E04CE6920A7419800838D03 /* ViewController.h */,
@@ -68,7 +101,33 @@
 				6E04CE7420A7419900838D03 /* Info.plist */,
 				6E04CE7520A7419900838D03 /* main.m */,
 			);
-			path = Reminds;
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6E04CE7D20A7429900838D03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E04CE8220A742BE00838D03 /* logo.png */,
+				6E04CE8620A742BE00838D03 /* logo@2x.png */,
+				6E04CE8720A742BE00838D03 /* logo@3x.png */,
+				6E04CE8420A742BE00838D03 /* newuser.png */,
+				6E04CE7F20A742BE00838D03 /* newuser@2x.png */,
+				6E04CE8020A742BE00838D03 /* newuser@3x.png */,
+				6E04CE8520A742BE00838D03 /* wechat.png */,
+				6E04CE8320A742BE00838D03 /* wechat@2x.png */,
+				6E04CE8120A742BE00838D03 /* wechat@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E04CE7E20A742A400838D03 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6E04CE9120A742D600838D03 /* LoginViewController.h */,
+				6E04CE9220A742D600838D03 /* LoginViewController.m */,
+				6E04CE9320A742D600838D03 /* LoginViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +187,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E04CE8820A742BE00838D03 /* newuser@2x.png in Resources */,
+				6E04CE8F20A742BE00838D03 /* logo@2x.png in Resources */,
+				6E04CE8920A742BE00838D03 /* newuser@3x.png in Resources */,
 				6E04CE7320A7419900838D03 /* LaunchScreen.storyboard in Resources */,
+				6E04CE8E20A742BE00838D03 /* wechat.png in Resources */,
+				6E04CE8A20A742BE00838D03 /* wechat@3x.png in Resources */,
+				6E04CE8B20A742BE00838D03 /* logo.png in Resources */,
 				6E04CE7020A7419900838D03 /* Assets.xcassets in Resources */,
+				6E04CE8D20A742BE00838D03 /* newuser.png in Resources */,
+				6E04CE9520A742D600838D03 /* LoginViewController.xib in Resources */,
+				6E04CE8C20A742BE00838D03 /* wechat@2x.png in Resources */,
+				6E04CE9020A742BE00838D03 /* logo@3x.png in Resources */,
 				6E04CE6E20A7419800838D03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E04CE9420A742D600838D03 /* LoginViewController.m in Sources */,
 				6E04CE6B20A7419800838D03 /* ViewController.m in Sources */,
 				6E04CE7620A7419900838D03 /* main.m in Sources */,
 				6E04CE6820A7419800838D03 /* AppDelegate.m in Sources */,
@@ -285,7 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Reminds/Info.plist;
+				INFOPLIST_FILE = Reminds/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Reminds/Info.plist;
+				INFOPLIST_FILE = Reminds/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
