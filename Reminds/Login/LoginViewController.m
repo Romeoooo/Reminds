@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "ForgetViewController.h"
+#import "RegisterViewController.h"
 
 @interface LoginViewController ()
 
@@ -26,13 +27,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tfView.layer.cornerRadius = 4;
+    self.tfView.layer.cornerRadius = 3;
     self.wechatButton.layer.cornerRadius = self.wechatButton.frame.size.height / 2;
     self.registerButton.layer.cornerRadius = self.registerButton.frame.size.height / 2;
     
     [self.forgetButton bk_addEventHandler:^(id sender) {
         ForgetViewController *forgetVC = [[ForgetViewController alloc] init];
         [self.navigationController pushViewController:forgetVC animated:YES];
+    } forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.registerButton bk_addEventHandler:^(id sender) {
+        RegisterViewController *registerVC = [[RegisterViewController alloc] init];
+        [self.navigationController pushViewController:registerVC animated:YES];
+    } forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.noAccountButton bk_addEventHandler:^(id sender) {
+        RegisterViewController *registerVC = [[RegisterViewController alloc] init];
+        [self.navigationController pushViewController:registerVC animated:YES];
     } forControlEvents:UIControlEventTouchUpInside];
     
 }

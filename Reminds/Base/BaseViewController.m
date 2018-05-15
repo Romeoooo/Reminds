@@ -7,8 +7,11 @@
 //
 
 #import "BaseViewController.h"
+#import "CustomNavView.h"
 
 @interface BaseViewController ()
+
+@property (strong, nonatomic) CustomNavView *navView; //导航栏
 
 @end
 
@@ -16,7 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    CGFloat navHeight;
+    if (iPhoneX) {
+        navHeight = 84;
+    }else{
+        navHeight = 64;
+    }
+    self.navView = [[CustomNavView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, navHeight)];
+    [self.view addSubview:self.navView];
+}
+
+- (void)setNavTitle:(NSString *)navTitle{
+    self.navView.titleLabel.text = navTitle;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,4 +10,7 @@
 
 @interface CustomNavView : UIView
 
+@property (strong, nonatomic) UILabel *titleLabel; //标题
+@property (strong, nonatomic) UIButton *backButton; //返回按钮
+
 @end

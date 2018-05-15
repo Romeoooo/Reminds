@@ -1,34 +1,33 @@
 //
-//  ForgetViewController.m
+//  RegisterViewController.m
 //  Reminds
 //
-//  Created by ZhangPeng on 2018/5/13.
+//  Created by ZhangPeng on 2018/5/14.
 //  Copyright © 2018年 braspring. All rights reserved.
 //
 
-#import "ForgetViewController.h"
+#import "RegisterViewController.h"
 
-@interface ForgetViewController ()
+@interface RegisterViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
 @property (weak, nonatomic) IBOutlet UIView *tfView;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;
 @property (weak, nonatomic) IBOutlet UITextField *codeTF;
 @property (weak, nonatomic) IBOutlet UIButton *codeButton;
-@property (weak, nonatomic) IBOutlet UIButton *changeButton;
 
 @end
 
-@implementation ForgetViewController
+@implementation RegisterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self setNavTitle:@"忘记密码"];
+    [self setNavTitle:@"注册新用户"];
     
     self.tfView.layer.cornerRadius = 3;
     self.codeButton.layer.cornerRadius = 3;
-    self.changeButton.layer.cornerRadius = self.changeButton.height / 2;
+    self.registerButton.layer.cornerRadius = self.registerButton.height / 2;
 }
 
 - (void)didReceiveMemoryWarning {

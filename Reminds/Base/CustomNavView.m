@@ -10,12 +10,28 @@
 
 @implementation CustomNavView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor colorWithHexString:@"#3E4952"];
+        
+        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, frame.size.height - 44, frame.size.width, 44)];
+        self.titleLabel.textColor = [UIColor whiteColor];
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.font = [UIFont systemFontOfSize:18];
+        [self addSubview:self.titleLabel];
+        
+        self.backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, frame.size.height - 44, 44, 44)];
+        [self.backButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+        [self.backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:self.backButton];
+    }
+    return self;
 }
-*/
+
+- (void)backAction{
+    [self.viewController.navigationController popViewControllerAnimated:YES];
+}
 
 @end

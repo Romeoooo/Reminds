@@ -30,6 +30,8 @@
 		6E04CEB620A7541C00838D03 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E04CEB420A7541C00838D03 /* ForgetViewController.m */; };
 		6E04CEB720A7541C00838D03 /* ForgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CEB520A7541C00838D03 /* ForgetViewController.xib */; };
 		6E04CEBA20A7546B00838D03 /* CustomNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E04CEB920A7546B00838D03 /* CustomNavView.m */; };
+		6EAE436D20A9E61800665409 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE436B20A9E61800665409 /* RegisterViewController.m */; };
+		6EAE436E20A9E61800665409 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAE436C20A9E61800665409 /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,10 @@
 		6E04CEB520A7541C00838D03 /* ForgetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetViewController.xib; sourceTree = "<group>"; };
 		6E04CEB820A7546B00838D03 /* CustomNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavView.h; sourceTree = "<group>"; };
 		6E04CEB920A7546B00838D03 /* CustomNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavView.m; sourceTree = "<group>"; };
+		6EAE436920A9E14B00665409 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		6EAE436A20A9E61800665409 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		6EAE436B20A9E61800665409 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		6EAE436C20A9E61800665409 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		7A0D20005BD68B43DB1F3E33 /* Pods-Reminds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reminds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reminds/Pods-Reminds.debug.xcconfig"; sourceTree = "<group>"; };
 		C073F0808DD9B201A7B7C2B2 /* libPods-Reminds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,6 +142,7 @@
 				6E04CE7420A7419900838D03 /* Info.plist */,
 				6E04CE7520A7419900838D03 /* main.m */,
 				6E04CE9620A74E4700838D03 /* PrefixHeader.pch */,
+				6EAE436920A9E14B00665409 /* Constant.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -168,6 +175,9 @@
 				6E04CEB320A7541C00838D03 /* ForgetViewController.h */,
 				6E04CEB420A7541C00838D03 /* ForgetViewController.m */,
 				6E04CEB520A7541C00838D03 /* ForgetViewController.xib */,
+				6EAE436A20A9E61800665409 /* RegisterViewController.h */,
+				6EAE436B20A9E61800665409 /* RegisterViewController.m */,
+				6EAE436C20A9E61800665409 /* RegisterViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -257,6 +267,7 @@
 				6E04CE9520A742D600838D03 /* LoginViewController.xib in Resources */,
 				6E04CE8C20A742BE00838D03 /* wechat@2x.png in Resources */,
 				6E04CE9020A742BE00838D03 /* logo@3x.png in Resources */,
+				6EAE436E20A9E61800665409 /* RegisterViewController.xib in Resources */,
 				6E04CEB720A7541C00838D03 /* ForgetViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +324,7 @@
 				6E04CEB620A7541C00838D03 /* ForgetViewController.m in Sources */,
 				6E04CEB220A753FF00838D03 /* BaseViewController.m in Sources */,
 				6E04CE7620A7419900838D03 /* main.m in Sources */,
+				6EAE436D20A9E61800665409 /* RegisterViewController.m in Sources */,
 				6E04CE6820A7419800838D03 /* AppDelegate.m in Sources */,
 				6E04CEBA20A7546B00838D03 /* CustomNavView.m in Sources */,
 			);

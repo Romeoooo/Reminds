@@ -12,5 +12,6 @@
 #import <YYKit.h>
 #import <IQKeyboardManager.h>
 #import <BlocksKit/BlocksKit+UIKit.h>
+#import "Constant.h"
 
 #endif /* PrefixHeader_pch */
