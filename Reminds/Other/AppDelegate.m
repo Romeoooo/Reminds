@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "TabBarController.h"
 
 @interface AppDelegate ()
 
@@ -20,22 +21,31 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     [self appConfig];
-    
-    LoginViewController *loginVC = [[LoginViewController alloc] init];
-    UINavigationController *loginNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
-    loginNav.navigationBarHidden = YES;
-    self.window.rootViewController = loginNav;
+    [self configTabController];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
+- (void)configTabController{
+    TabBarController *tabController = [[TabBarController alloc] init];
+    self.window.rootViewController = tabController;
+}
+
+- (void)configLoginController{
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    UINavigationController *loginNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    loginNav.navigationBarHidden = YES;
+    self.window.rootViewController = loginNav;
+}
+
 - (void)appConfig{
     [[IQKeyboardManager sharedManager] setEnable:YES];
     [[UITextField appearance] setTintColor:[UIColor colorWithHexString:@"#AAAAAA"]];
+    
+    [[UITabBar appearance] setTintColor:[UIColor colorWithHexString:@"#3E4952"]];
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

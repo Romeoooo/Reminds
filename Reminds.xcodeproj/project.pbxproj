@@ -30,6 +30,18 @@
 		6E04CEB620A7541C00838D03 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E04CEB420A7541C00838D03 /* ForgetViewController.m */; };
 		6E04CEB720A7541C00838D03 /* ForgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E04CEB520A7541C00838D03 /* ForgetViewController.xib */; };
 		6E04CEBA20A7546B00838D03 /* CustomNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E04CEB920A7546B00838D03 /* CustomNavView.m */; };
+		6E8C432920AA80DB00CC4099 /* RemindsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C432720AA80DB00CC4099 /* RemindsViewController.m */; };
+		6E8C432A20AA80DB00CC4099 /* RemindsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C432820AA80DB00CC4099 /* RemindsViewController.xib */; };
+		6E8C432E20AA810300CC4099 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C432C20AA810300CC4099 /* ContactViewController.m */; };
+		6E8C432F20AA810300CC4099 /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C432D20AA810300CC4099 /* ContactViewController.xib */; };
+		6E8C433320AA864F00CC4099 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C433120AA864F00CC4099 /* TabBarController.m */; };
+		6E8C433420AA864F00CC4099 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C433220AA864F00CC4099 /* TabBarController.xib */; };
+		6E8C433B20AACB1700CC4099 /* tab_reminds@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C433520AACB1700CC4099 /* tab_reminds@3x.png */; };
+		6E8C433C20AACB1700CC4099 /* tab_contact@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C433620AACB1700CC4099 /* tab_contact@3x.png */; };
+		6E8C433D20AACB1700CC4099 /* tab_reminds.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C433720AACB1700CC4099 /* tab_reminds.png */; };
+		6E8C433E20AACB1700CC4099 /* tab_contact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C433820AACB1700CC4099 /* tab_contact@2x.png */; };
+		6E8C433F20AACB1700CC4099 /* tab_contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C433920AACB1700CC4099 /* tab_contact.png */; };
+		6E8C434020AACB1700CC4099 /* tab_reminds@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C433A20AACB1700CC4099 /* tab_reminds@2x.png */; };
 		6EAE436D20A9E61800665409 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE436B20A9E61800665409 /* RegisterViewController.m */; };
 		6EAE436E20A9E61800665409 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAE436C20A9E61800665409 /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
@@ -66,6 +78,21 @@
 		6E04CEB520A7541C00838D03 /* ForgetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetViewController.xib; sourceTree = "<group>"; };
 		6E04CEB820A7546B00838D03 /* CustomNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavView.h; sourceTree = "<group>"; };
 		6E04CEB920A7546B00838D03 /* CustomNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavView.m; sourceTree = "<group>"; };
+		6E8C432620AA80DB00CC4099 /* RemindsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemindsViewController.h; sourceTree = "<group>"; };
+		6E8C432720AA80DB00CC4099 /* RemindsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindsViewController.m; sourceTree = "<group>"; };
+		6E8C432820AA80DB00CC4099 /* RemindsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemindsViewController.xib; sourceTree = "<group>"; };
+		6E8C432B20AA810300CC4099 /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		6E8C432C20AA810300CC4099 /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		6E8C432D20AA810300CC4099 /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		6E8C433020AA864F00CC4099 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		6E8C433120AA864F00CC4099 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		6E8C433220AA864F00CC4099 /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		6E8C433520AACB1700CC4099 /* tab_reminds@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_reminds@3x.png"; sourceTree = "<group>"; };
+		6E8C433620AACB1700CC4099 /* tab_contact@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_contact@3x.png"; sourceTree = "<group>"; };
+		6E8C433720AACB1700CC4099 /* tab_reminds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_reminds.png; sourceTree = "<group>"; };
+		6E8C433820AACB1700CC4099 /* tab_contact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_contact@2x.png"; sourceTree = "<group>"; };
+		6E8C433920AACB1700CC4099 /* tab_contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_contact.png; sourceTree = "<group>"; };
+		6E8C433A20AACB1700CC4099 /* tab_reminds@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_reminds@2x.png"; sourceTree = "<group>"; };
 		6EAE436920A9E14B00665409 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		6EAE436A20A9E61800665409 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		6EAE436B20A9E61800665409 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
@@ -124,6 +151,7 @@
 		6E04CE6520A7419800838D03 /* Reminds */ = {
 			isa = PBXGroup;
 			children = (
+				6E8C432520AA80C200CC4099 /* Tab */,
 				6E04CE9720A74FF800838D03 /* Base */,
 				6E04CE7E20A742A400838D03 /* Login */,
 				6E04CE7D20A7429900838D03 /* Resources */,
@@ -150,6 +178,12 @@
 		6E04CE7D20A7429900838D03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6E8C433920AACB1700CC4099 /* tab_contact.png */,
+				6E8C433820AACB1700CC4099 /* tab_contact@2x.png */,
+				6E8C433620AACB1700CC4099 /* tab_contact@3x.png */,
+				6E8C433720AACB1700CC4099 /* tab_reminds.png */,
+				6E8C433A20AACB1700CC4099 /* tab_reminds@2x.png */,
+				6E8C433520AACB1700CC4099 /* tab_reminds@3x.png */,
 				6E04CEA020A750B000838D03 /* back.png */,
 				6E04CEA120A750B100838D03 /* back@2x.png */,
 				6E04CEA220A750B100838D03 /* back@3x.png */,
@@ -189,8 +223,24 @@
 				6E04CEB120A753FF00838D03 /* BaseViewController.m */,
 				6E04CEB820A7546B00838D03 /* CustomNavView.h */,
 				6E04CEB920A7546B00838D03 /* CustomNavView.m */,
+				6E8C433020AA864F00CC4099 /* TabBarController.h */,
+				6E8C433120AA864F00CC4099 /* TabBarController.m */,
+				6E8C433220AA864F00CC4099 /* TabBarController.xib */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		6E8C432520AA80C200CC4099 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				6E8C432620AA80DB00CC4099 /* RemindsViewController.h */,
+				6E8C432720AA80DB00CC4099 /* RemindsViewController.m */,
+				6E8C432820AA80DB00CC4099 /* RemindsViewController.xib */,
+				6E8C432B20AA810300CC4099 /* ContactViewController.h */,
+				6E8C432C20AA810300CC4099 /* ContactViewController.m */,
+				6E8C432D20AA810300CC4099 /* ContactViewController.xib */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,10 +303,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E04CE8820A742BE00838D03 /* newuser@2x.png in Resources */,
+				6E8C434020AACB1700CC4099 /* tab_reminds@2x.png in Resources */,
+				6E8C433E20AACB1700CC4099 /* tab_contact@2x.png in Resources */,
 				6E04CE8F20A742BE00838D03 /* logo@2x.png in Resources */,
 				6E04CEA420A750B100838D03 /* back@2x.png in Resources */,
 				6E04CE8920A742BE00838D03 /* newuser@3x.png in Resources */,
 				6E04CE7320A7419900838D03 /* LaunchScreen.storyboard in Resources */,
+				6E8C432A20AA80DB00CC4099 /* RemindsViewController.xib in Resources */,
+				6E8C432F20AA810300CC4099 /* ContactViewController.xib in Resources */,
+				6E8C433D20AACB1700CC4099 /* tab_reminds.png in Resources */,
+				6E8C433B20AACB1700CC4099 /* tab_reminds@3x.png in Resources */,
 				6E04CEA320A750B100838D03 /* back.png in Resources */,
 				6E04CE8E20A742BE00838D03 /* wechat.png in Resources */,
 				6E04CE8A20A742BE00838D03 /* wechat@3x.png in Resources */,
@@ -265,9 +321,12 @@
 				6E04CEA520A750B100838D03 /* back@3x.png in Resources */,
 				6E04CE8D20A742BE00838D03 /* newuser.png in Resources */,
 				6E04CE9520A742D600838D03 /* LoginViewController.xib in Resources */,
+				6E8C433C20AACB1700CC4099 /* tab_contact@3x.png in Resources */,
 				6E04CE8C20A742BE00838D03 /* wechat@2x.png in Resources */,
 				6E04CE9020A742BE00838D03 /* logo@3x.png in Resources */,
+				6E8C433420AA864F00CC4099 /* TabBarController.xib in Resources */,
 				6EAE436E20A9E61800665409 /* RegisterViewController.xib in Resources */,
+				6E8C433F20AACB1700CC4099 /* tab_contact.png in Resources */,
 				6E04CEB720A7541C00838D03 /* ForgetViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,8 +382,11 @@
 				6E04CE9420A742D600838D03 /* LoginViewController.m in Sources */,
 				6E04CEB620A7541C00838D03 /* ForgetViewController.m in Sources */,
 				6E04CEB220A753FF00838D03 /* BaseViewController.m in Sources */,
+				6E8C432920AA80DB00CC4099 /* RemindsViewController.m in Sources */,
+				6E8C432E20AA810300CC4099 /* ContactViewController.m in Sources */,
 				6E04CE7620A7419900838D03 /* main.m in Sources */,
 				6EAE436D20A9E61800665409 /* RegisterViewController.m in Sources */,
+				6E8C433320AA864F00CC4099 /* TabBarController.m in Sources */,
 				6E04CE6820A7419800838D03 /* AppDelegate.m in Sources */,
 				6E04CEBA20A7546B00838D03 /* CustomNavView.m in Sources */,
 			);
