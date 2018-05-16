@@ -32,7 +32,7 @@
     
     [self.bindingView bk_whenTapped:^{
         BindingPhoneViewController *bindingController = [[BindingPhoneViewController alloc] init];
-        [self setHidesBottomBarWhenPushed:YES];
+        self.tabBarController.tabBar.hidden = YES;
         [self.navigationController pushViewController:bindingController animated:YES];
     }];
 }

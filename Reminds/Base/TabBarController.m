@@ -9,6 +9,7 @@
 #import "TabBarController.h"
 #import "RemindsViewController.h"
 #import "ContactViewController.h"
+#import "CreatRemindsViewController.h"
 
 @interface TabBarController ()
 
@@ -37,6 +38,17 @@
     nav_contact.title = @"联系人";
     
     [self setViewControllers:@[nav_reminds, nav_contact] animated:YES];
+    
+    UIButton *addRemindsButton = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth/2 - 35, -25, 70, 70)];
+    [addRemindsButton setImage:[UIImage imageNamed:@"add_reminds"] forState:UIControlStateNormal];
+    addRemindsButton.layer.cornerRadius = 35;
+    [addRemindsButton addTarget:self action:@selector(addRemindsAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.tabBar addSubview:addRemindsButton];
+}
+
+- (void)addRemindsAction{
+    CreatRemindsViewController *creatController = [[CreatRemindsViewController alloc] init];
+    [self presentViewController:creatController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

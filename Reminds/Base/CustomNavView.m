@@ -31,7 +31,11 @@
 }
 
 - (void)backAction{
-    [self.viewController.navigationController popViewControllerAnimated:YES];
+    if (!self.viewController.navigationController.viewControllers) {
+        [self.viewController dismissViewControllerAnimated:YES completion:nil];
+    }else{
+        [self.viewController.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 @end

@@ -1,34 +1,23 @@
 //
-//  BaseViewController.m
+//  CreatRemindsViewController.m
 //  Reminds
 //
-//  Created by ZhangPeng on 2018/5/13.
+//  Created by ZhangPeng on 2018/5/16.
 //  Copyright © 2018年 braspring. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "CreatRemindsViewController.h"
 
-@interface BaseViewController ()
+@interface CreatRemindsViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation CreatRemindsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    CGFloat navHeight;
-    if (iPhoneX) {
-        navHeight = 84;
-    }else{
-        navHeight = 64;
-    }
-    self.navView = [[CustomNavView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, navHeight)];
-    [self.view addSubview:self.navView];
-}
-
-- (void)setNavTitle:(NSString *)navTitle{
-    self.navView.titleLabel.text = navTitle;
+    [self setNavTitle:@"创建提醒"];
+    [self.navView.backButton setImage:[UIImage imageNamed:@"cha"] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
