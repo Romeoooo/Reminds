@@ -44,6 +44,20 @@
 		6E8C434020AACB1700CC4099 /* tab_reminds@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C433A20AACB1700CC4099 /* tab_reminds@2x.png */; };
 		6EAE436D20A9E61800665409 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE436B20A9E61800665409 /* RegisterViewController.m */; };
 		6EAE436E20A9E61800665409 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAE436C20A9E61800665409 /* RegisterViewController.xib */; };
+		6EB1875220ABC40A00B29583 /* reminds_remind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1874C20ABC40900B29583 /* reminds_remind@2x.png */; };
+		6EB1875320ABC40A00B29583 /* reminds_remind@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1874D20ABC40A00B29583 /* reminds_remind@3x.png */; };
+		6EB1875420ABC40A00B29583 /* reminds_remind.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1874E20ABC40A00B29583 /* reminds_remind.png */; };
+		6EB1875520ABC40A00B29583 /* reminds_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1874F20ABC40A00B29583 /* reminds_user.png */; };
+		6EB1875620ABC40A00B29583 /* reminds_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1875020ABC40A00B29583 /* reminds_user@2x.png */; };
+		6EB1875720ABC40A00B29583 /* reminds_user@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1875120ABC40A00B29583 /* reminds_user@3x.png */; };
+		6EB1875E20ABC59900B29583 /* reminds_phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1875820ABC59900B29583 /* reminds_phone@2x.png */; };
+		6EB1875F20ABC59900B29583 /* reminds_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1875920ABC59900B29583 /* reminds_arrow.png */; };
+		6EB1876020ABC59900B29583 /* reminds_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1875A20ABC59900B29583 /* reminds_phone.png */; };
+		6EB1876120ABC59900B29583 /* reminds_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1875B20ABC59900B29583 /* reminds_arrow@2x.png */; };
+		6EB1876220ABC59900B29583 /* reminds_phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1875C20ABC59900B29583 /* reminds_phone@3x.png */; };
+		6EB1876320ABC59900B29583 /* reminds_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1875D20ABC59900B29583 /* reminds_arrow@3x.png */; };
+		6EB1876820ABC6B900B29583 /* BindingPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB1876620ABC6B900B29583 /* BindingPhoneViewController.m */; };
+		6EB1876920ABC6B900B29583 /* BindingPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1876720ABC6B900B29583 /* BindingPhoneViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +111,21 @@
 		6EAE436A20A9E61800665409 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		6EAE436B20A9E61800665409 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		6EAE436C20A9E61800665409 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		6EB1874C20ABC40900B29583 /* reminds_remind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminds_remind@2x.png"; sourceTree = "<group>"; };
+		6EB1874D20ABC40A00B29583 /* reminds_remind@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminds_remind@3x.png"; sourceTree = "<group>"; };
+		6EB1874E20ABC40A00B29583 /* reminds_remind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminds_remind.png; sourceTree = "<group>"; };
+		6EB1874F20ABC40A00B29583 /* reminds_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminds_user.png; sourceTree = "<group>"; };
+		6EB1875020ABC40A00B29583 /* reminds_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminds_user@2x.png"; sourceTree = "<group>"; };
+		6EB1875120ABC40A00B29583 /* reminds_user@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminds_user@3x.png"; sourceTree = "<group>"; };
+		6EB1875820ABC59900B29583 /* reminds_phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminds_phone@2x.png"; sourceTree = "<group>"; };
+		6EB1875920ABC59900B29583 /* reminds_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminds_arrow.png; sourceTree = "<group>"; };
+		6EB1875A20ABC59900B29583 /* reminds_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminds_phone.png; sourceTree = "<group>"; };
+		6EB1875B20ABC59900B29583 /* reminds_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminds_arrow@2x.png"; sourceTree = "<group>"; };
+		6EB1875C20ABC59900B29583 /* reminds_phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminds_phone@3x.png"; sourceTree = "<group>"; };
+		6EB1875D20ABC59900B29583 /* reminds_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminds_arrow@3x.png"; sourceTree = "<group>"; };
+		6EB1876520ABC6B900B29583 /* BindingPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindingPhoneViewController.h; sourceTree = "<group>"; };
+		6EB1876620ABC6B900B29583 /* BindingPhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindingPhoneViewController.m; sourceTree = "<group>"; };
+		6EB1876720ABC6B900B29583 /* BindingPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BindingPhoneViewController.xib; sourceTree = "<group>"; };
 		7A0D20005BD68B43DB1F3E33 /* Pods-Reminds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reminds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reminds/Pods-Reminds.debug.xcconfig"; sourceTree = "<group>"; };
 		C073F0808DD9B201A7B7C2B2 /* libPods-Reminds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +180,7 @@
 		6E04CE6520A7419800838D03 /* Reminds */ = {
 			isa = PBXGroup;
 			children = (
+				6EB1876420ABC6A500B29583 /* User */,
 				6E8C432520AA80C200CC4099 /* Tab */,
 				6E04CE9720A74FF800838D03 /* Base */,
 				6E04CE7E20A742A400838D03 /* Login */,
@@ -178,6 +208,18 @@
 		6E04CE7D20A7429900838D03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6EB1875920ABC59900B29583 /* reminds_arrow.png */,
+				6EB1875B20ABC59900B29583 /* reminds_arrow@2x.png */,
+				6EB1875D20ABC59900B29583 /* reminds_arrow@3x.png */,
+				6EB1875A20ABC59900B29583 /* reminds_phone.png */,
+				6EB1875820ABC59900B29583 /* reminds_phone@2x.png */,
+				6EB1875C20ABC59900B29583 /* reminds_phone@3x.png */,
+				6EB1874E20ABC40A00B29583 /* reminds_remind.png */,
+				6EB1874C20ABC40900B29583 /* reminds_remind@2x.png */,
+				6EB1874D20ABC40A00B29583 /* reminds_remind@3x.png */,
+				6EB1874F20ABC40A00B29583 /* reminds_user.png */,
+				6EB1875020ABC40A00B29583 /* reminds_user@2x.png */,
+				6EB1875120ABC40A00B29583 /* reminds_user@3x.png */,
 				6E8C433920AACB1700CC4099 /* tab_contact.png */,
 				6E8C433820AACB1700CC4099 /* tab_contact@2x.png */,
 				6E8C433620AACB1700CC4099 /* tab_contact@3x.png */,
@@ -243,6 +285,16 @@
 			path = Tab;
 			sourceTree = "<group>";
 		};
+		6EB1876420ABC6A500B29583 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				6EB1876520ABC6B900B29583 /* BindingPhoneViewController.h */,
+				6EB1876620ABC6B900B29583 /* BindingPhoneViewController.m */,
+				6EB1876720ABC6B900B29583 /* BindingPhoneViewController.xib */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,27 +355,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E04CE8820A742BE00838D03 /* newuser@2x.png in Resources */,
+				6EB1875720ABC40A00B29583 /* reminds_user@3x.png in Resources */,
 				6E8C434020AACB1700CC4099 /* tab_reminds@2x.png in Resources */,
+				6EB1875620ABC40A00B29583 /* reminds_user@2x.png in Resources */,
 				6E8C433E20AACB1700CC4099 /* tab_contact@2x.png in Resources */,
 				6E04CE8F20A742BE00838D03 /* logo@2x.png in Resources */,
+				6EB1876320ABC59900B29583 /* reminds_arrow@3x.png in Resources */,
 				6E04CEA420A750B100838D03 /* back@2x.png in Resources */,
 				6E04CE8920A742BE00838D03 /* newuser@3x.png in Resources */,
+				6EB1875420ABC40A00B29583 /* reminds_remind.png in Resources */,
 				6E04CE7320A7419900838D03 /* LaunchScreen.storyboard in Resources */,
 				6E8C432A20AA80DB00CC4099 /* RemindsViewController.xib in Resources */,
 				6E8C432F20AA810300CC4099 /* ContactViewController.xib in Resources */,
+				6EB1876920ABC6B900B29583 /* BindingPhoneViewController.xib in Resources */,
 				6E8C433D20AACB1700CC4099 /* tab_reminds.png in Resources */,
 				6E8C433B20AACB1700CC4099 /* tab_reminds@3x.png in Resources */,
+				6EB1876220ABC59900B29583 /* reminds_phone@3x.png in Resources */,
+				6EB1875220ABC40A00B29583 /* reminds_remind@2x.png in Resources */,
 				6E04CEA320A750B100838D03 /* back.png in Resources */,
 				6E04CE8E20A742BE00838D03 /* wechat.png in Resources */,
+				6EB1875520ABC40A00B29583 /* reminds_user.png in Resources */,
 				6E04CE8A20A742BE00838D03 /* wechat@3x.png in Resources */,
 				6E04CE8B20A742BE00838D03 /* logo.png in Resources */,
+				6EB1876020ABC59900B29583 /* reminds_phone.png in Resources */,
+				6EB1875F20ABC59900B29583 /* reminds_arrow.png in Resources */,
 				6E04CE7020A7419900838D03 /* Assets.xcassets in Resources */,
 				6E04CEA520A750B100838D03 /* back@3x.png in Resources */,
+				6EB1875E20ABC59900B29583 /* reminds_phone@2x.png in Resources */,
 				6E04CE8D20A742BE00838D03 /* newuser.png in Resources */,
 				6E04CE9520A742D600838D03 /* LoginViewController.xib in Resources */,
 				6E8C433C20AACB1700CC4099 /* tab_contact@3x.png in Resources */,
 				6E04CE8C20A742BE00838D03 /* wechat@2x.png in Resources */,
+				6EB1876120ABC59900B29583 /* reminds_arrow@2x.png in Resources */,
 				6E04CE9020A742BE00838D03 /* logo@3x.png in Resources */,
+				6EB1875320ABC40A00B29583 /* reminds_remind@3x.png in Resources */,
 				6E8C433420AA864F00CC4099 /* TabBarController.xib in Resources */,
 				6EAE436E20A9E61800665409 /* RegisterViewController.xib in Resources */,
 				6E8C433F20AACB1700CC4099 /* tab_contact.png in Resources */,
@@ -382,6 +447,7 @@
 				6E04CE9420A742D600838D03 /* LoginViewController.m in Sources */,
 				6E04CEB620A7541C00838D03 /* ForgetViewController.m in Sources */,
 				6E04CEB220A753FF00838D03 /* BaseViewController.m in Sources */,
+				6EB1876820ABC6B900B29583 /* BindingPhoneViewController.m in Sources */,
 				6E8C432920AA80DB00CC4099 /* RemindsViewController.m in Sources */,
 				6E8C432E20AA810300CC4099 /* ContactViewController.m in Sources */,
 				6E04CE7620A7419900838D03 /* main.m in Sources */,

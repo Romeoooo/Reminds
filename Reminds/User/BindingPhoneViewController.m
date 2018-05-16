@@ -1,32 +1,22 @@
 //
-//  ContactViewController.m
+//  BindingPhoneViewController.m
 //  Reminds
 //
-//  Created by ZhangPeng on 2018/5/15.
+//  Created by ZhangPeng on 2018/5/16.
 //  Copyright © 2018年 braspring. All rights reserved.
 //
 
-#import "ContactViewController.h"
+#import "BindingPhoneViewController.h"
 
-@interface ContactViewController ()
+@interface BindingPhoneViewController ()
 
 @end
 
-@implementation ContactViewController
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:YES];
-    self.tabBarController.tabBar.hidden = NO;
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.tabBarController.tabBar.hidden = NO;
-}
+@implementation BindingPhoneViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self setNavTitle:@"绑定手机号码"];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RemindsViewController">
             <connections>
+                <outlet property="bindingView" destination="a4R-Gg-vEY" id="WgP-Ce-58s"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +20,111 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5t9-rz-kcv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒事项" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfd-HQ-U8l">
+                            <rect key="frame" x="15" y="35" width="150" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="8WA-lY-xmF"/>
+                                <constraint firstAttribute="width" constant="150" id="yXO-7m-1r6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmM-Jr-KFR">
+                            <rect key="frame" x="335" y="35" width="40" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="nFg-ur-4RS"/>
+                                <constraint firstAttribute="width" constant="40" id="nwb-AY-0nh"/>
+                            </constraints>
+                            <state key="normal" image="reminds_user.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0J-vh-VQO">
+                            <rect key="frame" x="295" y="35" width="40" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="7Yi-WP-SVg"/>
+                                <constraint firstAttribute="height" constant="50" id="7dT-CQ-nry"/>
+                            </constraints>
+                            <state key="normal" image="reminds_remind.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.28627450980000002" blue="0.32156862749999998" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zmM-Jr-KFR" secondAttribute="bottom" id="3gZ-9k-Blv"/>
+                        <constraint firstItem="Yfd-HQ-U8l" firstAttribute="leading" secondItem="5t9-rz-kcv" secondAttribute="leading" constant="15" id="Mft-jW-oXa"/>
+                        <constraint firstItem="zmM-Jr-KFR" firstAttribute="leading" secondItem="p0J-vh-VQO" secondAttribute="trailing" id="Nxu-Ed-7TW"/>
+                        <constraint firstAttribute="trailing" secondItem="zmM-Jr-KFR" secondAttribute="trailing" id="QaA-F0-52P"/>
+                        <constraint firstAttribute="bottom" secondItem="p0J-vh-VQO" secondAttribute="bottom" id="pml-gi-OfG"/>
+                        <constraint firstAttribute="height" constant="85" id="uNT-27-VZH"/>
+                        <constraint firstAttribute="bottom" secondItem="Yfd-HQ-U8l" secondAttribute="bottom" id="wLE-f4-bfs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVj-Xs-KoH" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="85" width="375" height="582"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4R-Gg-vEY" userLabel="BindingView">
+                    <rect key="frame" x="0.0" y="85" width="375" height="35"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reminds_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="u0b-tD-OW9">
+                            <rect key="frame" x="340" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="sk2-RT-bI4"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reminds_phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="icK-K6-jrf">
+                            <rect key="frame" x="15" y="0.0" width="20" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="H6D-du-paw"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定手机号码，免费获赠一个月会员资格~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dg-5f-Uhu">
+                            <rect key="frame" x="35" y="0.0" width="305" height="35"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.83921568627450982" blue="0.4392156862745098" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="u0b-tD-OW9" secondAttribute="bottom" id="6B4-zD-2wu"/>
+                        <constraint firstAttribute="bottom" secondItem="icK-K6-jrf" secondAttribute="bottom" id="CKp-T2-HSQ"/>
+                        <constraint firstItem="icK-K6-jrf" firstAttribute="leading" secondItem="a4R-Gg-vEY" secondAttribute="leading" constant="15" id="Imc-IL-Uqs"/>
+                        <constraint firstAttribute="bottom" secondItem="9dg-5f-Uhu" secondAttribute="bottom" id="Kkk-oX-6Np"/>
+                        <constraint firstItem="9dg-5f-Uhu" firstAttribute="leading" secondItem="icK-K6-jrf" secondAttribute="trailing" id="S1m-e0-A9V"/>
+                        <constraint firstItem="u0b-tD-OW9" firstAttribute="top" secondItem="a4R-Gg-vEY" secondAttribute="top" id="S9t-RJ-bf7"/>
+                        <constraint firstAttribute="trailing" secondItem="u0b-tD-OW9" secondAttribute="trailing" id="iY0-1l-QgJ"/>
+                        <constraint firstAttribute="height" constant="35" id="lk6-gJ-VG8"/>
+                        <constraint firstItem="u0b-tD-OW9" firstAttribute="leading" secondItem="9dg-5f-Uhu" secondAttribute="trailing" id="nWF-zn-LrV"/>
+                        <constraint firstItem="icK-K6-jrf" firstAttribute="top" secondItem="a4R-Gg-vEY" secondAttribute="top" id="vSE-2u-nUw"/>
+                        <constraint firstItem="9dg-5f-Uhu" firstAttribute="top" secondItem="a4R-Gg-vEY" secondAttribute="top" id="xW5-dF-A12"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="iVj-Xs-KoH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="2ft-3S-fiF"/>
+                <constraint firstItem="5t9-rz-kcv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4O4-wL-m7M"/>
+                <constraint firstItem="5t9-rz-kcv" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="A1S-ud-30o"/>
+                <constraint firstItem="iVj-Xs-KoH" firstAttribute="top" secondItem="5t9-rz-kcv" secondAttribute="bottom" id="DjS-4j-ojD"/>
+                <constraint firstItem="5t9-rz-kcv" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="EYf-Ed-nGd"/>
+                <constraint firstItem="a4R-Gg-vEY" firstAttribute="top" secondItem="5t9-rz-kcv" secondAttribute="bottom" id="MG2-CJ-4Nf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="a4R-Gg-vEY" secondAttribute="trailing" id="UTA-jo-fYB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="iVj-Xs-KoH" secondAttribute="bottom" id="nWB-02-Wuc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="iVj-Xs-KoH" secondAttribute="trailing" id="tK7-14-MaX"/>
+                <constraint firstItem="a4R-Gg-vEY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="uzh-dO-Cjs"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="reminds_arrow.png" width="6" height="10"/>
+        <image name="reminds_phone.png" width="6" height="9"/>
+        <image name="reminds_remind.png" width="15" height="20"/>
+        <image name="reminds_user.png" width="20" height="20"/>
+    </resources>
 </document>

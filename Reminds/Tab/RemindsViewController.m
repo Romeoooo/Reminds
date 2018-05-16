@@ -7,16 +7,34 @@
 //
 
 #import "RemindsViewController.h"
+#import "BindingPhoneViewController.h"
 
 @interface RemindsViewController ()
+
+@property (weak, nonatomic) IBOutlet UIView *bindingView;
 
 @end
 
 @implementation RemindsViewController
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    self.tabBarController.tabBar.hidden = NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self.bindingView bk_whenTapped:^{
+        BindingPhoneViewController *bindingController = [[BindingPhoneViewController alloc] init];
+        [self setHidesBottomBarWhenPushed:YES];
+        [self.navigationController pushViewController:bindingController animated:YES];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
